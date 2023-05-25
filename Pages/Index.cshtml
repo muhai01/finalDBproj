@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1 style="text-align: center; color: #006BB8; font-size: 35px; font-family: Copperplate">Warriors vs. Lakers: Average Player Statistics - 2022-23 Season</h1>
+
+<table style="margin: auto">
+    <tr>
+        <td>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td style="border: 5px solid #FDBA21; margin-left:auto; margin-right: auto">@Html.Raw(Model.WCTtableW)</td>
+                </tr>
+                <tr>
+                    <td style="border: 5px solid #FDBA21">@Html.Raw(Model.Wtable)</td>
+                </tr>
+                <tr>
+                    <td style="border: 5px solid #FDBA21">@Html.Raw(Model.WPtable)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://logos-download.com/wp-content/uploads/2016/04/Golden_State_Warriors_logo_logotype.png" style="width:150px;height:180px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td style="border: 5px solid #552583; margin-left: auto; margin-right: auto">@Html.Raw(Model.WCTtableL)</td;>
+                </tr>
+                <tr>
+                    <td style="border: 5px solid #552583">@Html.Raw(Model.Ltable)</td>
+                </tr>
+                <tr>
+                    <td style="border: 5px solid #552583">@Html.Raw(Model.LPtable)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://1000logos.net/wp-content/uploads/2017/03/la-lakers-logo.jpg" style="width:288px;height:180px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
